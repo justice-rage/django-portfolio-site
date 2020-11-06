@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# developer added files
+jpd_website/project_notes/basic_info
