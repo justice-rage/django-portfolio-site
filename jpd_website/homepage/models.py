@@ -24,8 +24,8 @@ class Project(models.Model):
         return self.title #or self.title for blog posts
 """------------------------------------------------------------------------"""
 # Contact is the "Contact me" section of my website
-class Contact(models.Model):
-    name =
+"""class Contact(models.Model):
+    name = 
     subject = 
     email = 
-    message = 
+    message = """
