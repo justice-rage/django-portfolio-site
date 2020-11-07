@@ -5,13 +5,16 @@ from homepage.models import About, Project
 
 # About section
 def about_me(request):
+    homepage = About.objects.all()
+    return render(request, 'homepage/homepage.html',
+                    {'homepage': homepage})
 """------------------------------------------------------------------------"""
 # Project section
 def all_projects(request):
     # query database to return all project objects
-    projects = Project.objects.all()
-    return render(request, 'projects/all_projects.html',
-                    {'projects': projects})
+    homepage = Project.objects.all()
+    return render(request, 'homepage/homepage.html',
+                    {'homepage': homepage})
 
 def project_detail(request, pk):
     project = Project.objects.get(pk=pk)
