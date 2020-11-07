@@ -19,4 +19,4 @@ def project_detail(request, pk):
                     {'project': project})
 """------------------------------------------------------------------------"""
 # Contact section
-def contact_me(request):
+"""def contact_me(request):"""
